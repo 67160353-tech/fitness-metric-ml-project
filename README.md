@@ -23,13 +23,6 @@ Link:https://fitness-metric-ml-project-jfq2c8qrad3ggwbkjzvwf2.streamlit.app/
 R-squared (R2 Score): -0.0422
 Mean Absolute Error (MAE): 101.18 Calories
 Root Mean Squared Error (RMSE): 117.41 Calories
-Calories Burn         1.000000
-Duration              0.021793
-Dream Weight          0.012749
-BMI                   0.012602
-Exercise Intensity    0.010819
-Actual Weight         0.010444
-Age                  -0.001113
-ID                   -0.017108
-Heart Rate           -0.035889
-Name: Calories Burn, dtype: float64
+
+จากการทดลองพบว่าฟีเจอร์ในชุดข้อมูลนี้มีค่า Correlation กับ Calories Burn ต่ำมาก (เกือบเป็น 0) ทำให้โมเดลแบบ Linear หรือ Random Forest ทั่วไปทำนายได้ยาก
+หากต้องการเพิ่มความแม่นยำ ในอนาคตควรเก็บข้อมูลที่สัมพันธ์โดยตรงมากขึ้น เช่น ความเร็ว (Speed) หรือ ความลาดชัน (Incline) ขณะออกกำลังกาย
